@@ -1,6 +1,6 @@
-# eslint-plugin-max-return-statements-per-function
+# eslint-plugin-complex-logic
 
-This rule checks the number of logical operators in a conditional expression to see the complexity of the conditional expression.
+This rule checks the number of logical operators in a conditional expression to see its complexity.
 
 ## Installation
 
@@ -18,7 +18,7 @@ yarn add -D eslint-plugin-complex-logic
 
 ## Usage
 
-The rule takes one option, which is the maximum number of logical operators in an expression. The default is 5.
+The rule takes one option, which is the maximum allowed number of logical operators in an expression. The default is 5.
 
 You can set the option like this in `.eslintrc.js`:
 
