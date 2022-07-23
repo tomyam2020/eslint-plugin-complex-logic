@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-complex-logic",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ESLint rule to check the complexity of logical expressions",
   "keywords": [
     "eslint",
@@ -9,9 +9,9 @@
     "eslintrule",
     "eslint-rule"
   ],
-  "homepage": "",
+  "homepage": "https://github.com/tomyam2020/eslint-plugin-complex-logic",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/tomyam2020/eslint-plugin-complex-logic/issues"
   },
   "repository": {
     "type": "git",

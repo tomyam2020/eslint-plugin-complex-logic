@@ -12,7 +12,7 @@ module.exports = {
     docs: {
       description: "check the complexity of logical expressions",
       recommended: false,
-      url: "",
+      url: "https://github.com/tomyam2020/eslint-plugin-complex-logic",
     },
     schema: [
       {
