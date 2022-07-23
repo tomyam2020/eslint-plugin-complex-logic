@@ -1,0 +1,43 @@
+{
+  "name": "eslint-plugin-complex-logic",
+  "version": "0.1.0",
+  "description": "ESLint rule to check the complexity of logical expressions",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslintrule",
+    "eslint-rule"
+  ],
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "author": "tomyam2020",
+  "main": "index.js",
+  "files": [
+    "rules",
+    "index.js",
+    "README.md"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@types/eslint": "^8.4.5",
+    "eslint": "^8.20.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-rulesdir": "^0.2.1",
+    "eslint-utils": "^3.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.32.0 || ^8.2.0"
+  }
+}
