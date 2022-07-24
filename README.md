@@ -1,5 +1,7 @@
 # eslint-plugin-complex-logic
 
+[![npm version](https://badge.fury.io/js/eslint-plugin-complex-logic.svg)](https://badge.fury.io/js/eslint-plugin-complex-logic)
+
 This rule checks the number of logical operators in a conditional expression to see its complexity.
 
 ## Installation
