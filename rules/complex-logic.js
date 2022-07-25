@@ -67,11 +67,6 @@ module.exports = {
      */
     function endExpression(node) {
       const count = expressionStack.pop();
-
-      if (node.type !== "IfStatement") {
-        return;
-      }
-
       reportIfTooManyLogicalOperators(node, count, maxLogicalExpressions);
     }
 
@@ -89,10 +84,12 @@ module.exports = {
 
     return {
       IfStatement: startExpression,
+      ConditionalExpression: startExpression,
 
       LogicalExpression: countLogicalOperator,
 
       "IfStatement:exit": endExpression,
+      "ConditionalExpression:exit": endExpression,
     };
   },
 };

@@ -12,6 +12,10 @@ ruleTester.run("complex-logic", rule, {
       code: "if (true && true && true && true && true && true && true) {}",
       options: [6],
     },
+    {
+      code: "const foo = true && true && true && true && true && true ? 1 : 0;",
+      parserOptions: { ecmaVersion: 6 },
+    },
   ],
   invalid: [
     {
@@ -30,6 +34,16 @@ ruleTester.run("complex-logic", rule, {
         {
           messageId: "exceed",
           data: { count: "5", max: 4 },
+        },
+      ],
+    },
+    {
+      code: "const foo = true && true && true && true && true && true && true ? 1 : 0;",
+      parserOptions: { ecmaVersion: 6 },
+      errors: [
+        {
+          messageId: "exceed",
+          data: { count: "6", max: 5 },
         },
       ],
     },
