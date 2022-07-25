@@ -44,9 +44,9 @@ module.exports = {
     }
 
     /**
-     * @param {ASTNode} node node to evaluate
-     * @param {int} count Number of statements in node
-     * @param {int} max Maximum number of statements allowed
+     * @param {import('eslint').Rule.Node} node node to evaluate
+     * @param {number} count Number of statements in node
+     * @param {number} max Maximum number of statements allowed
      * @returns {void}
      * @private
      */
@@ -61,7 +61,7 @@ module.exports = {
     }
 
     /**
-     * @param {ASTNode} node node to evaluate
+     * @param {import('eslint').Rule.Node} node node to evaluate
      * @returns {void}
      * @private
      */
