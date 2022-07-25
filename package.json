@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-complex-logic",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "ESLint rule to check the complexity of logical expressions",
   "keywords": [
     "eslint",
