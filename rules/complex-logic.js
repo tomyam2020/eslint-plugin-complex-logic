@@ -3,7 +3,7 @@
  * @author tomyam2020
  */
 
-const DEFAULT_MAX_COUNT = 5;
+const DEFAULT_MAX_COUNT = 4;
 
 /** @type {import('eslint').Rule.RuleModule} */
 module.exports = {
