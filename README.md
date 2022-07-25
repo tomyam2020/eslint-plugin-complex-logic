@@ -4,6 +4,22 @@
 
 This rule checks the number of logical operators in a conditional expression to see its complexity.
 
+```js
+/* eslint complex-logic/complex-logic: ["error", 4] */
+
+// incorrect
+if (true && true && true && true && true && true) {
+}
+
+const foo = true && true && true && true && true && true ? 1 : 0;
+
+// correct
+if (true && true && true && true && true) {
+}
+
+const bar = true && true && true && true && true ? 1 : 0;
+```
+
 ## Installation
 
 ### npm
@@ -20,7 +36,7 @@ yarn add -D eslint-plugin-complex-logic
 
 ## Usage
 
-The rule takes one option, which is the maximum allowed number of logical operators in an expression. The default is 5.
+The rule takes one option, which is the maximum allowed number of logical operators in an expression. The default is 4.
 
 You can set the option like this in `.eslintrc.js`:
 
@@ -28,7 +44,7 @@ You can set the option like this in `.eslintrc.js`:
 module.exports = {
   plugins: ["complex-logic"],
   rules: {
-    "complex-logic/complex-logic": ["error", 5],
+    "complex-logic/complex-logic": ["error", 4],
   },
 };
 ```
