@@ -23,7 +23,7 @@ module.exports = {
     ],
     messages: {
       exceed:
-        "This logical expression has too many logical operators (the maximum allowed is {{max}}). Consider simplifying it.",
+        "Refactor this logical expression to reduce its logical operators from {{count}} to the {{max}} allowed.",
     },
   },
 
